@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="stylefunge.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <h1 class="text-lg font-bold text-gray-700 mb-3 ">Befunge interpreter</h1>
+    <div id="grid"></div>
+    <br>
+    <button id="runS"
+        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded shadow-lg transition duration-200">
+        Run slowly
+    </button>
+    <button id="runF"
+        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded shadow-lg transition duration-200">
+        Run fast
+    </button>
+    <button id="DebugMode"
+        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded shadow-lg transition duration-200">
+        Debug
+    </button>
+    <button id="SaveButton"
+        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded shadow-lg transition duration-200 ml-2">
+        Save code
+    </button>
+    <input type="file" id="OpenButton" accept=".txt,.bf" style="display: none;" />
+    <button id="FakeOpenButton"
+        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded shadow-lg transition duration-200 ml-2">
+        Load code
+    </button>
+    <div class="mt-2 max-w-7xl mx-auto">
+        <h3 class="text-lg font-bold text-gray-700 mb-2">Console</h3>
+        <pre id="out"
+            class="w-full h-48 p-4 bg-gray-900 text-green-400 font-mono text-sm rounded  overflow-y-auto whitespace-pre-wrap"></pre>
+    </div>
+    <output type="text" id="test"></output>
+    <script src="scriptfunge.js"></script>
+</body>
+
+</html>

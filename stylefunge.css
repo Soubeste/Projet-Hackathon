@@ -1,0 +1,18 @@
+input {
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    text-align: center;
+    font-family: monospace;
+    font-size: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 25;
+}
+
+#out {
+    white-space: pre-wrap;
+}
